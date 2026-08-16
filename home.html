@@ -117,13 +117,14 @@ const hack="";
       
       {hint:"",
         id: "gpassword",
-        range: "657844466&range=A111:D130",
+        range: "657844466&range=A111:E130",
         headers: ["Name", "Username", "Password","pro/hint"],
         row: c => {
           const v = i => c[i]?.f || c[i]?.v || '';
           return `<tr><td><a href="${v(1)}"target="_blank">${v(0)}</a></td>
           <td><span class="copy" onclick="copyText('${v(2)}')">${v(2)}</span></td>
-          <td><span class="copy" onclick="copyText('${v(3)}')">${v(3)}</span></td><td><span class="copy" onclick="copyText('${v(4)}')">${v(4)}</span></td></tr>`;
+          <td><span class="copy" onclick="copyText('${v(3)}')">${v(3)}</span></td>
+          <td><span class="copy" onclick="copyText('${v(4)}')">${v(4)}</span></td></tr>`;
         }
       },
       
