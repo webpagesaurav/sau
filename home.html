@@ -151,47 +151,16 @@ const hack="";
       
       
       
-      { hint:"",
-        id: "creditcard",
-        range: "516462335&range=A2:Z20",
-        headers: ["Name|<a href='upi://pay?pa='>Balance</a>|whatsapp", "UPI", "UPI"],
-        row: c => {
-          const v = i => c[i]?.f || c[i]?.v || '';
-          return `<tr>${v(1) ? `<td>${v(0)}
-${v(5) ? ` | <a href='//wa.me/91${v(5)}?text=${v(21)}'target='_blank'>₹${v(1)}</a>` : `| ₹${v(1)}`}
-</td>
-<td><span class="copy" onclick="copyText('${v(3)}')">${v(3)}</span></td><td><span class="copy" onclick="copyText('${v(4)}')">${v(4)}</span></td>` : v(1)}</tr>`;
-        }
-      },
+      
 
 
 
       
 
 
-      {
-                hint:"",
-        id: "caspasresult",
-        range: "657844466&range=j71:j80",
-        headers: [],
-        row: c => {
-          const v = i => c[i]?.f || c[i]?.v || '';
-          return `${v(0)}`;
-        }
-            },
+      
 
-      {hint:"",
-        id: "gpassword",
-        range: "657844466&range=A111:E130",
-        headers: ["Name", "Username", "Password","pro/hint"],
-        row: c => {
-          const v = i => c[i]?.f || c[i]?.v || '';
-          return `<tr><td><a href="${v(1)}"target="_blank">${v(0)}</a></td>
-          <td><span class="copy" onclick="copyText('${v(2)}')">${v(2)}</span></td>
-          <td><span class="copy" onclick="copyText('${v(3)}')">${v(3)}</span></td>
-          <td><span class="copy" onclick="copyText('${v(4)}')">${v(4)}</span></td></tr>`;
-        }
-      }
+      
       
         
       
